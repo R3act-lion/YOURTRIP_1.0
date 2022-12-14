@@ -2,7 +2,7 @@
 name: Help request
 about: Help request
 title: "[#issue-number] Help request"
-labels: "\U0001F587️help"
+labels: "\U0001F587️  help"
 assignees: ''
 
 ---
