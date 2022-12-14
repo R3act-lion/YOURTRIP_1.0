@@ -2,7 +2,7 @@
 name: Feature report
 about: Suggest an idea for this project
 title: "[#issue-number] Feature report"
-labels: ''
+labels: "\U0001F916feat, ✏️markup, ✨style"
 assignees: ''
 
 ---
