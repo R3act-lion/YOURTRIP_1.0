@@ -26,7 +26,7 @@ const LogoImage = styled.img`
     width: 100%;
 `
 
-const SearchAnchor = styled.a`
+const SearchLink = styled(Link)`
     width: 18px;
     position: absolute;
     margin-right: 16px;
@@ -44,9 +44,9 @@ export default function PageHeader() {
                     <LogoImage src={Yourtrip} alt='YOURTRIP' />
                 </Link>
             </LogoTitle>
-            <SearchAnchor href="/">
+            <SearchLink to='/'>
                 <SearchImage src={SearchIcon} alt='검색 버튼' />
-            </SearchAnchor>
+            </SearchLink>
             <PageNavigation />
         </HeaderContainer>
     )
