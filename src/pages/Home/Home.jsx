@@ -1,6 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import PageHeader from '../../components/header/PageHeader'
+import Today from '../../components/today/Today'
+import Most from '../../components/most/Most'
+import Story from '../../components/story/Story'
 
 const Container = styled.main`
     min-height: 100vh;
@@ -14,6 +17,9 @@ export default function Home() {
         <>
             <PageHeader />
             <Container>
+                <Today />
+                <Most />
+                <Story />
             </Container>
         </>
     )
