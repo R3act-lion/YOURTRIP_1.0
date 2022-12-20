@@ -23,6 +23,7 @@ import Today from "./pages/Location/Today/Today"
 import Place from "./pages/Location/Place/Place"
 import Thema from "./pages/Location/Today/TodayTheme/Thema"
 import PlaceList from "./pages/Location/PlaceList/PlaceList";
+import LocationDetail from "./pages/Location/Detail/LocationDetail";
 import { theme } from "./theme";
 
 const GlobalStyle = createGlobalStyle`
@@ -83,10 +84,11 @@ function App() {
         <Route path="/DetailComments" element={<DetailComments />} />
         <Route path="/Upload" element={<Upload />} />
         <Route path="/Search" element={<Search />} />
-        <Route path='/today' element={<Today></Today>}></Route>
-        <Route path='/today/thema' element={<Thema></Thema>}></Route>
-        <Route path='/place' element={<Place></Place>}></Route>
+        <Route path='/today' element={<Today></Today>} />
+        <Route path='/today/thema' element={<Thema></Thema>} /> 
+        <Route path='/place' element={<Place></Place>} />
         <Route path="/placeList" element={<PlaceList></PlaceList>} />
+        <Route path='/locationDetail' element={<LocationDetail></LocationDetail>} />
 
         <Route
           path="/profile/*"
