@@ -19,10 +19,10 @@ import Upload from "./pages/Community/Upload/Upload.jsx"
 import Search from "./pages/Community/Search/Search.jsx"
 
 import Home from "./pages/Home/Home";
-import Today from "./pages/Location/Today/Today"
-import Place from "./pages/Location/Place/Place"
-import Thema from "./pages/Location/Today/TodayTheme/Thema"
-
+import Today from "./pages/Location/Today/Today";
+import Place from "./pages/Location/Place/Place";
+import Thema from "./pages/Location/Today/TodayTheme/Thema";
+import PlaceList from "./pages/Location/PlaceList/PlaceList";
 
 const GlobalStyle = createGlobalStyle`
   ${reset}
@@ -84,7 +84,8 @@ function App() {
         <Route path='/today' element={<Today></Today>}></Route>
         <Route path='/today/thema' element={<Thema></Thema>}></Route>
         <Route path='/place' element={<Place></Place>}></Route>
-          
+        <Route path="/placeList" element={<PlaceList></PlaceList>} />
+
         <Route
           path="/profile/*"
           element={you ? <YourProfile you={you} /> : <MyProfile you={you} />}
