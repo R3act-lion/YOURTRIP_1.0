@@ -24,6 +24,7 @@ import Place from "./pages/Location/Place/Place";
 import Thema from "./pages/Location/Today/TodayTheme/Thema";
 import PlaceList from "./pages/Location/PlaceList/PlaceList";
 import LocationDetail from "./pages/Location/Detail/LocationDetail";
+import Restaurant from "./pages/Location/Restaurant/Restaurant";
 
 const GlobalStyle = createGlobalStyle`
   ${reset}
@@ -87,6 +88,7 @@ function App() {
         <Route path='/place' element={<Place></Place>} />
         <Route path="/placeList" element={<PlaceList></PlaceList>} />
         <Route path='/locationDetail' element={<LocationDetail></LocationDetail>} />
+        <Route path='/restaurant' element={<Restaurant></Restaurant>} />
 
         <Route
           path="/profile/*"

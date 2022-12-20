@@ -1,31 +1,8 @@
 import React from 'react'
-import styled from 'styled-components'
+import { PlaceDetailCont,PlaceDetailImg,PlaceDetailPara } from '../../components/PlaceDetailList/PlaceDetailList'
 import img from '../../assets/yeeun_image/todayImg1.png'
 
-export const PlaceDetailCont= styled.section`
-    width: 100%;
-    display: flex;
-    overflow: hidden;
-    gap: 13px;
-`
-
-export const PlaceDetailImg= styled.img`
-    flex-shrink: 0;
-    width: 212px;
-    height: 280px; 
-    margin-top: 13px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-`
-
-export const PlaceDetailPara= styled.p`
-    margin-top: 0;
-    margin-bottom: 20px;
-    width: 304px;
-    font-size: 14px;
-`
-
-export default function PlaceDetailList() {
+export default function RestaurantDetailList() {
   return (
     <>
         <PlaceDetailCont>
