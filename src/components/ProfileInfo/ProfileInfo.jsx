@@ -32,7 +32,7 @@ const FollowCount = styled.strong`
   font-size: 18px;
   font-weight: 700;
   &.following{
-    color: #767676;
+    color: ${props => props.theme.color.gray.g1};
   }
 `
 
