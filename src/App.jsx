@@ -1,5 +1,5 @@
 import reset from "styled-reset";
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle, ThemeProvider } from "styled-components";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MyProfile from "./pages/MyProfile/MyProfile";
 import YourProfile from "./pages/YourProfile/YourProfile";
@@ -19,11 +19,12 @@ import Upload from "./pages/Community/Upload/Upload.jsx"
 import Search from "./pages/Community/Search/Search.jsx"
 
 import Home from "./pages/Home/Home";
-import Today from "./pages/Location/Today/Today";
-import Place from "./pages/Location/Place/Place";
-import Thema from "./pages/Location/Today/TodayTheme/Thema";
+import Today from "./pages/Location/Today/Today"
+import Place from "./pages/Location/Place/Place"
+import Thema from "./pages/Location/Today/TodayTheme/Thema"
 import PlaceList from "./pages/Location/PlaceList/PlaceList";
 import LocationDetail from "./pages/Location/Detail/LocationDetail";
+import { theme } from "./theme";
 
 const GlobalStyle = createGlobalStyle`
   ${reset}
@@ -68,9 +69,10 @@ function App() {
   // myprofile yourprofile 구분하기 위한 변수 
 
   return (
+    <>
+    <ThemeProvider theme={theme} >
+    <GlobalStyle />
     <BrowserRouter>
-
-      <GlobalStyle />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/MainLogo" element={<MainLogo />} />
@@ -100,7 +102,9 @@ function App() {
           element={<SearchPlace />}
         />
       </Routes>
-    </BrowserRouter>
+        </BrowserRouter>
+        </ThemeProvider>
+      </>
   );
 }
 export default App;
