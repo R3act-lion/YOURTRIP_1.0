@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import aroundImg from '../../assets/yeeun_image/aroundImg.png'
-import heartOffImg from '../../assets/yeeun_image/heartOffImg'
+import heartOffImg from '../../assets/yeeun_image/heartOffImg.png'
 
 const Header=styled.h2`
     margin-bottom: 16px;
